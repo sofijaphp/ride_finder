@@ -1,0 +1,23 @@
+ion-card {
+    --background: #f9f9f9; 
+  }
+  
+  h2 {
+    text-align: center; 
+  }
+  
+  ion-card-title {
+    color: var(--ion-color-primary); 
+  }
+  
+  ion-item {
+    --padding-start: 0; 
+    --inner-padding-end: 0;
+  }
+  
+  ion-icon {
+    margin-right: 10px; 
+    font-size: 1.2rem; 
+    color: var(--ion-color-secondary); 
+  }
+  

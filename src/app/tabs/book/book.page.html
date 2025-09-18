@@ -1,0 +1,96 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/tabs/my-rides"></ion-back-button>
+      </ion-buttons>
+    </ion-buttons>
+    <ion-title>Book ride</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" id="bookContent">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Book</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+ <form  (ngSubmit)="onSubmit()" #bookForm="ngForm">
+    
+    <ion-list>
+    <ion-item>
+        <ion-label>Type of Transport</ion-label>
+        <ion-select [(ngModel)]="classType" name="type" required>
+          <ion-select-option value="sc">Small car</ion-select-option>
+          <ion-select-option value="bc">Big car</ion-select-option>
+          <ion-select-option value="van">Van</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+
+    <ion-item>
+      <ion-label>Departure</ion-label>
+      <ion-select [(ngModel)]="departure" name="departure" required>
+        <ion-select-option value="Beograd - Novi Beograd">Beograd - Novi Beograd</ion-select-option>
+        <ion-select-option value="Beograd - Autokomanda">Beograd - Autokomanda</ion-select-option>
+        <ion-select-option value="Beograd - Rakovica">Beograd - Rakovica</ion-select-option>
+        <ion-select-option value="Novi Sad">Novi Sad</ion-select-option>
+        <ion-select-option value="Nis">Nis</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Arrival</ion-label>
+        <ion-select [(ngModel)]="arrival" name="arrival" required>
+        <ion-select-option value="Cacak">Cacak</ion-select-option>
+        <ion-select-option value="Kragujevac">Kragujevac</ion-select-option>
+        <ion-select-option value="Kraljevo">Kraljevo</ion-select-option>
+        <ion-select-option value="Subotica">Subotica</ion-select-option>
+        <ion-select-option value="Sombor">Sombor</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+      <ion-item class="ion-margin">
+          <ion-label position="stacked">Ride Date</ion-label>
+          <ion-input
+            type="date"
+            [(ngModel)]="rideDate"
+            name="rideDate"
+            required>
+          </ion-input>
+        </ion-item>
+        
+<!-- 
+      <ion-select [(ngModel)]="selectedTimeSlotIndex" name="time" required interface="popover" placeholder="Select time">
+  <ion-select-option *ngFor="let s of timeSlots; let i = index" [value]="i">
+    {{ s.startTime }}
+  </ion-select-option>
+</ion-select>
+
+      <ion-select [(ngModel)]="selectedTimeSlotIndex" placeholder="Select time">
+  <ion-select-option *ngFor="let s of timeSlots; let i = index" [value]="i">
+    {{ s.startTime | titlecase }}
+  </ion-select-option>
+</ion-select> -->
+
+      <ion-item>
+        <ion-label>Time</ion-label>
+        <ion-select [(ngModel)]="selectedTimeSlotIndex"
+                    name="time"
+                    interface="popover"
+                    placeholder="Select time"
+                    required>
+          <ion-select-option *ngFor="let s of timeSlots; let i = index" [value]="i">
+            {{ s.startTime }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-button expand="block" color="secondary" (click)="onSubmit()">Book</ion-button>
+    
+  </form>
+
+  
+</ion-content>

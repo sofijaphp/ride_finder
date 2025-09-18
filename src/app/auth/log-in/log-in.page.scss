@@ -1,0 +1,14 @@
+ion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px; 
+  margin-bottom: 20px;
+}
+

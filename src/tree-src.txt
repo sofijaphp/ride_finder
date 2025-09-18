@@ -1,0 +1,121 @@
+Folder PATH listing
+Volume serial number is 8AF8-8315
+C:.
+|   global.scss
+|   index.html
+|   main.ts
+|   polyfills.ts
+|   test.ts
+|   tree-src.txt
+|   zone-flags.ts
+|   
++---app
+|   |   app-routing.module.ts
+|   |   app.component.html
+|   |   app.component.scss
+|   |   app.component.spec.ts
+|   |   app.component.ts
+|   |   app.module.ts
+|   |   
+|   +---auth
+|   |   |   auth.guard.spec.ts
+|   |   |   auth.guard.ts
+|   |   |   auth.service.spec.ts
+|   |   |   auth.service.ts
+|   |   |   user.model.ts
+|   |   |   
+|   |   +---log-in
+|   |   |       log-in-routing.module.ts
+|   |   |       log-in.module.ts
+|   |   |       log-in.page.html
+|   |   |       log-in.page.scss
+|   |   |       log-in.page.spec.ts
+|   |   |       log-in.page.ts
+|   |   |       
+|   |   \---register
+|   |           register-routing.module.ts
+|   |           register.module.ts
+|   |           register.page.html
+|   |           register.page.scss
+|   |           register.page.spec.ts
+|   |           register.page.ts
+|   |           
+|   +---services
+|   |       admin.service.spec.ts
+|   |       admin.service.ts
+|   |       booking.service.spec.ts
+|   |       booking.service.ts
+|   |       
+|   \---tabs
+|       |   booking.model.ts
+|       |   tabs-routing.module.ts
+|       |   tabs.module.ts
+|       |   tabs.page.html
+|       |   tabs.page.scss
+|       |   tabs.page.spec.ts
+|       |   tabs.page.ts
+|       |   time-slot.model.ts
+|       |   
+|       +---admin-approve-rides
+|       |       admin-approve-rides-routing.module.ts
+|       |       admin-approve-rides.module.ts
+|       |       admin-approve-rides.page.html
+|       |       admin-approve-rides.page.scss
+|       |       admin-approve-rides.page.spec.ts
+|       |       admin-approve-rides.page.ts
+|       |       
+|       +---admin-create-rides
+|       |       admin-create-rides-routing.module.ts
+|       |       admin-create-rides.module.ts
+|       |       admin-create-rides.page.html
+|       |       admin-create-rides.page.scss
+|       |       admin-create-rides.page.spec.ts
+|       |       admin-create-rides.page.ts
+|       |       
+|       +---book
+|       |       book-routing.module.ts
+|       |       book.module.ts
+|       |       book.page.html
+|       |       book.page.scss
+|       |       book.page.spec.ts
+|       |       book.page.ts
+|       |       
+|       +---home
+|       |       home-routing.module.ts
+|       |       home.module.ts
+|       |       home.page.html
+|       |       home.page.scss
+|       |       home.page.spec.ts
+|       |       home.page.ts
+|       |       
+|       +---my-rides
+|       |       my-rides-routing.module.ts
+|       |       my-rides.module.ts
+|       |       my-rides.page.html
+|       |       my-rides.page.scss
+|       |       my-rides.page.spec.ts
+|       |       my-rides.page.ts
+|       |       
+|       \---profile
+|               profile-routing.module.ts
+|               profile.module.ts
+|               profile.page.html
+|               profile.page.scss
+|               profile.page.spec.ts
+|               profile.page.ts
+|               
++---assets
+|   |   planeta.png
+|   |   ridefinder.png
+|   |   shapes.svg
+|   |   
+|   \---icon
+|           car.png
+|           
++---environments
+|       environment.prod.ts
+|       environment.ts
+|       
+\---theme
+        variables.scss
+        
